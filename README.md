@@ -13,6 +13,16 @@
 - implement sign In user Api
 - Created Redux Store with user Slice
 - implemented signout features
+- Fetch API from TMDB movie
+- Get data from TMDB now playing movies list API
+- Custom Hooks for Now playing videos
+- create movieSlice
+- Update store with movie data
+- Planning for MainContainer & secondary container
+- Fetch data for Trailer Video
+- Update Store with Trailer Video
+- Embeded the youtube video and make it autoplay and mute
+- write tailwind classes to make main container look awsome.
 
 # Features
 - Login/Sign up 
