@@ -23,6 +23,7 @@
 - Update Store with Trailer Video
 - Embeded the youtube video and make it autoplay and mute
 - write tailwind classes to make main container look awsome.
+- Build Secondary Container.
 
 # Features
 - Login/Sign up 
