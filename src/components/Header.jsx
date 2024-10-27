@@ -12,6 +12,7 @@ const Header = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
+    const user = useSelector((store) => store.user);
 
     const handleSignOut = () =>{
         signOut(auth)
@@ -24,12 +25,13 @@ const Header = () => {
     useEffect(() => {
        const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-              const {uid,email, displayName} = user;
+              const {uid, email, displayName, photoURL} = user;
               dispatch(
                 addUser({
                    uid: uid, 
                    email: email, 
-                   displayName: displayName
+                   displayName: displayName,
+                   photoURL: photoURL,
                 })
             );
               navigate("/browse")
@@ -56,7 +58,8 @@ const handleLanguageChange = (e) =>{
       src= {LOGO}
       alt="logo"
     />
-    <div>
+   {user && (
+     <div className="flex p-2">
    {showGptSearch && (<select 
     className=" bg-gray-800 text-white m-2 p-1"
      onChange={handleLanguageChange}>
@@ -72,12 +75,18 @@ const handleLanguageChange = (e) =>{
         >
         {showGptSearch ? "Homepage" : "  GPT Search"}
     </button>
+    <img
+    className="w-10 h-10 rounded-full mt-2 m-2"
+     src={user?.photoURL}
+     alt="icon"
+     />
     <button 
     onClick={handleSignOut}
-    className=" m-4 px-4 py-2 text-white bg-red-700 text-lg rounded-lg font-bold">
-        Sign Out
+    className="text-white text-lg font-bold">
+        (Sign Out)
         </button>
     </div>
+)}
     </div>
   )
 }

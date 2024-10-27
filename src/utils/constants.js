@@ -2,7 +2,7 @@ export const LOGO = "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897
 
 export const API_OPTIONS = {
     method: 'GET',
-  headers: {
+    headers: {
     accept: 'application/json',
     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzNjdiNTJmMTM5NGE4MWExZTQ4NmE2OGFiZDBkOWM5NyIsIm5iZiI6MTcyOTU5MjQ3My41ODQwNDEsInN1YiI6IjY3MTc3YTc2MWUyMmQzZmI2YmJkNDc4MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TngprkfqOrKdU0s78lN-Mn3RrRR_Y0sCWpLV3CuQ5j4'
   }
@@ -16,3 +16,5 @@ export const SUPPORTED_LANGUAGES = [{identifier: "en", name: "English" },
     {identifier: "hindi", name: "Hindi" },
     {identifier: "spanish", name: "Spanish" },
 ];
+
+ export const OPENAI_KEY = "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"

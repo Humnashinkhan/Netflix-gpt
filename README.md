@@ -33,6 +33,7 @@
 - GPT search Bar.
 - Added a multi language feature in our app. very important 
 - Integrate GPT API
+- when user login Update profile with photo.
 
 
 # Features
