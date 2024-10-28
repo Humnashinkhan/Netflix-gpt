@@ -17,4 +17,3 @@ export const SUPPORTED_LANGUAGES = [{identifier: "en", name: "English" },
     {identifier: "spanish", name: "Spanish" },
 ];
 
- export const OPENAI_KEY = "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"
